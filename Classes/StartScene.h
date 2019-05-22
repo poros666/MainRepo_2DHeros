@@ -2,7 +2,9 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
-
+#include"Music.h"
+#include"SettingsScene.h"
+#include"ChooseHeroScene.h"
 class StartScene : public cocos2d::Scene
 {
 public:
@@ -11,7 +13,6 @@ public:
     virtual bool init();
     
     // a selector callback
-    void menuCloseCallback(cocos2d::Ref* pSender);
 	void startGameCallback(cocos2d::Ref* pSender);
 	void settingGameCallback(cocos2d::Ref* pSender);
     // implement the "static create()" method manually
